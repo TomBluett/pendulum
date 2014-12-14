@@ -3,12 +3,62 @@
 <head>
   <meta charset=utf-8 />
   <title>Canvas Pendulums</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 
+<form>
+  <div class="well col-sm-3 col-xs-12">
+    <div class="form-group">
+      <label for="width">Width?</label><br>
+      <input type="text" name="width" class="form-control">
+    </div>
 
-<canvas id="myCanvas" width="500" height="500"></canvas>
+    <div class="form-group">
+      <label for="height">Height?</label><br>
+      <input type="text" name="height" class="form-control">
+    </div>
 
-<script src="js/pendulum.js"></script>
+    <div class="form-group">
+      <label for="frequency">Frequency?</label><br>
+      <input type="text" name="frequency" class="form-control">
+    </div>
+
+    <div class="radio">
+      <p><strong>Pick a color!</strong></p>
+
+      <label>
+        <input type="radio" name="color"
+        value="blue">
+        Blue
+      </label>
+    </div>
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="color"
+        value="red">
+        red
+      </label>
+    </div>
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="color"
+        value="green">
+        green
+      </label>
+    </div>
+    <input type="submit" value="Do it!" class="btn btn-default">
+  </div>
+</form>
+
+  <div class="well col-sm-9 col-xs-12">
+    <canvas id="myCanvas" width="300" height="650"></canvas>
+  </div>
+
+
+
+  <script src="js/pendulum.js"></script>
 </body>
 </html>
